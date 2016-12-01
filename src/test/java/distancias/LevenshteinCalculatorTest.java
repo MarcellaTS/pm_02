@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package distancias;
 
 import org.junit.After;
@@ -14,7 +10,7 @@ import static org.junit.Assert.*;
 
 /**
  *
- * @author marce
+ * @author marcella e priscila
  */
 public class LevenshteinCalculatorTest {
     
@@ -38,124 +34,124 @@ public class LevenshteinCalculatorTest {
     }
 
     /**
-     * Test of DistanciaEntrePalavras method, of class LevenshteinCalculator.
+     * Test of distanciaEntrePalavras method, of class LevenshteinCalculator.
      */
     @Test
-    public void testDistanciaEntrePalavras() {
+    public void testdistanciaEntrePalavras() {
         System.out.println("DistanciaLevenshtein");
         String palavra_um = "a";
         String palavra_dois = "as";
         LevenshteinCalculator instance = new LevenshteinCalculator();
         int expResult = 1;
-        int result = instance.DistanciaEntrePalavras(palavra_um, palavra_dois);
+        int result = instance.distanciaEntrePalavras(palavra_um, palavra_dois);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
         //fail("The test case is a prototype.");
     }
     
-    public void test2DistanciaLevenshtein() {
+    public void test2distanciaLevenshtein() {
         System.out.println("DistanciaLevenshtein");
         String palavra_um = "a";
         String palavra_dois = "asa";
         LevenshteinCalculator instance = new LevenshteinCalculator();
         int expResult = 2;
-        int result = instance.DistanciaEntrePalavras(palavra_um, palavra_dois);
+        int result = instance.distanciaEntrePalavras(palavra_um, palavra_dois);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
         //fail("The test case is a prototype.");
     }
     
-    public void test3DistanciaLevenshtein() {
+    public void test3distanciaLevenshtein() {
         System.out.println("DistanciaLevenshtein");
         String palavra_um = "preocupar";
         String palavra_dois = "ocupar";
         LevenshteinCalculator instance = new LevenshteinCalculator();
         int expResult = 3;
-        int result = instance.DistanciaEntrePalavras(palavra_um, palavra_dois);
+        int result = instance.distanciaEntrePalavras(palavra_um, palavra_dois);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
         //fail("The test case is a prototype.");
     }
     
-    public void test4DistanciaLevenshtein() {
+    public void test4distanciaLevenshtein() {
         System.out.println("DistanciaLevenshtein");
         String palavra_um = "idealizado";
         String palavra_dois = "ideal";
         LevenshteinCalculator instance = new LevenshteinCalculator();
         int expResult = 5;
-        int result = instance.DistanciaEntrePalavras(palavra_um, palavra_dois);
+        int result = instance.distanciaEntrePalavras(palavra_um, palavra_dois);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
         //fail("The test case is a prototype.");
     }
     
-    public void test5DistanciaLevenshtein() {
+    public void test5distanciaLevenshtein() {
         System.out.println("DistanciaLevenshtein");
         String palavra_um = "gostoso";
         String palavra_dois = "gostosa";
         LevenshteinCalculator instance = new LevenshteinCalculator();
         int expResult = 1;
-        int result = instance.DistanciaEntrePalavras(palavra_um, palavra_dois);
+        int result = instance.distanciaEntrePalavras(palavra_um, palavra_dois);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
         //fail("The test case is a prototype.");
     }
     
-    public void test6DistanciaLevenshtein() {
+    public void test6distanciaLevenshtein() {
         System.out.println("DistanciaLevenshtein");
         String palavra_um = "cola";
         String palavra_dois = "cone";
         LevenshteinCalculator instance = new LevenshteinCalculator();
         int expResult = 2;
-        int result = instance.DistanciaEntrePalavras(palavra_um, palavra_dois);
+        int result = instance.distanciaEntrePalavras(palavra_um, palavra_dois);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
         //fail("The test case is a prototype.");
     }
     
-    public void test7DistanciaLevenshtein() {
+    public void test7distanciaLevenshtein() {
         System.out.println("DistanciaLevenshtein");
         String palavra_um = "embaixador";
         String palavra_dois = "embaixatriz";
         LevenshteinCalculator instance = new LevenshteinCalculator();
         int expResult = 4;
-        int result = instance.DistanciaEntrePalavras(palavra_um, palavra_dois);
+        int result = instance.distanciaEntrePalavras(palavra_um, palavra_dois);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
         //fail("The test case is a prototype.");
     }
     
-    public void test8DistanciaLevenshtein() {
+    public void test8distanciaLevenshtein() {
         System.out.println("DistanciaLevenshtein");
         String palavra_um = "embaixatriz";
         String palavra_dois = "embaixador";
         LevenshteinCalculator instance = new LevenshteinCalculator();
         int expResult = 4;
-        int result = instance.DistanciaEntrePalavras(palavra_um, palavra_dois);
+        int result = instance.distanciaEntrePalavras(palavra_um, palavra_dois);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
         //fail("The test case is a prototype.");
     }
     
-    public void test9DistanciaLevenshtein() {
+    public void test9distanciaLevenshtein() {
         System.out.println("DistanciaLevenshtein");
         String palavra_um = "";
         String palavra_dois = "embaixador";
         LevenshteinCalculator instance = new LevenshteinCalculator();
         int expResult = 10;
-        int result = instance.DistanciaEntrePalavras(palavra_um, palavra_dois);
+        int result = instance.distanciaEntrePalavras(palavra_um, palavra_dois);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
         //fail("The test case is a prototype.");
     }
     
-    public void test10DistanciaLevenshtein() {
+    public void test10distanciaLevenshtein() {
         System.out.println("DistanciaLevenshtein");
         String palavra_um = "embaixatriz";
         String palavra_dois = "";
         LevenshteinCalculator instance = new LevenshteinCalculator();
         int expResult = 11;
-        int result = instance.DistanciaEntrePalavras(palavra_um, palavra_dois);
+        int result = instance.distanciaEntrePalavras(palavra_um, palavra_dois);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
         //fail("The test case is a prototype.");
