@@ -6,7 +6,7 @@ import java.util.TreeSet;
 
 /**
  *
- *  Classe que...
+ *  Classe que cuida de operações relativas à BKTree
  * 
  *  @author marcella e priscila
  */
@@ -46,16 +46,16 @@ public class BurkhardKellerTreeSearchResult
     }
 
     /**
-     * 
-     */
+    * 
+    */
     public double getDistance(int position)
     {
 	return (Double) null;
     }
 
     /**
-     * Adiciona no
-     */
+    * Adiciona o nó completo
+    */
     public void addNode(Node node)
     {
 	if (numberOfNodes < lenght) {
@@ -69,8 +69,8 @@ public class BurkhardKellerTreeSearchResult
     }
 
     /**
-     * Adiciona no
-     */
+    * Adiciona nó passando a palavra
+    */
     public void add(String word)
     {
 	Node node = new Node(word);
