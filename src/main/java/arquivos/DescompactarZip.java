@@ -18,7 +18,7 @@ import java.util.zip.ZipFile;
 public class DescompactarZip
 {
     //Descompacta o arquivo zip e salva ele no diretório. É preciso passar o nome do arquuivo que está zipado.
-    public void ExtrairConteudoZip(String nome_arquivo) throws IOException
+    public void extrairConteudoZip(String nome_arquivo) throws IOException
     {
         ZipFile arquivoZip = new ZipFile(nome_arquivo);
         Enumeration<?> listagemConteudo = arquivoZip.entries();

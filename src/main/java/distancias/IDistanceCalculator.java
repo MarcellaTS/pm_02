@@ -9,6 +9,6 @@ package distancias;
  */
 public interface IDistanceCalculator
 {
-    public int DistanciaEntrePalavras(String palavra_um, String palavra_dois);
+    public int distanciaEntrePalavras(String palavra_um, String palavra_dois);
     public float distance(String word, String word0);
 }

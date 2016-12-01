@@ -5,7 +5,7 @@ import Teclado.KeyboardLayout;
 
 /**
  *
- *  Classe que...
+ *  Classe que implementa a calculadora Levenshtein
  * 
  *  @author marcella e priscila
  */
@@ -16,10 +16,12 @@ public class LevenshteinCalculator
         
     }
 
-    /*Calcula distância entre palavras pelo algoritmo de LevenshteinCalculator:
-        Essa distância é calculada pelo mínimo de operações para transformar uma palavra na outra.
-        As operações consideradas nesse algoritmo são: inserir, deletar ou substituir um caracter.*/
-    public int DistanciaEntrePalavras(String palavra_um, String palavra_dois)
+    /*
+    *   Calcula distância entre palavras pelo algoritmo de LevenshteinCalculator:
+    *    Essa distância é calculada pelo mínimo de operações para transformar uma palavra na outra.
+    *    As operações consideradas nesse algoritmo são: inserir, deletar ou substituir um caracter.
+    */
+    public int distanciaEntrePalavras(String palavra_um, String palavra_dois)
     {
         char[] array_palavra_um = palavra_um.toUpperCase().toCharArray();
         char[] array_palavra_dois = palavra_dois.toUpperCase().toCharArray();
